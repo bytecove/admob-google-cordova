@@ -883,31 +883,31 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
      */
     public static AdSize adSizeFromString(String size) {
         if ("H50".equals(size)) {
-          new AdSize(AdSize.FULL_WIDTH, 50);
-        } 
+          return new AdSize(AdSize.FULL_WIDTH, 50);
+        }
         else if ("H60".equals(size)) {
-          new AdSize(AdSize.FULL_WIDTH, 60);
+          return new AdSize(AdSize.FULL_WIDTH, 60);
         }
         else if ("H32".equals(size)) {
-          new AdSize(AdSize.FULL_WIDTH, 32);
+          return new AdSize(AdSize.FULL_WIDTH, 32);
         }
         else if ("BANNER".equals(size)) {
-            return AdSize.BANNER;
-        } 
+          return AdSize.BANNER;
+        }
         else if ("IAB_MRECT".equals(size)) {
-            return AdSize.MEDIUM_RECTANGLE;
-        } 
+          return AdSize.MEDIUM_RECTANGLE;
+        }
         else if ("IAB_BANNER".equals(size)) {
-            return AdSize.FULL_BANNER;
-        } 
+          return AdSize.FULL_BANNER;
+        }
         else if ("IAB_LEADERBOARD".equals(size)) {
-            return AdSize.LEADERBOARD;
-        } 
+          return AdSize.LEADERBOARD;
+        }
         else if ("SMART_BANNER".equals(size)) {
-            return AdSize.SMART_BANNER;
-        } 
+          return AdSize.SMART_BANNER;
+        }
         else {
-            return AdSize.SMART_BANNER;
+          return AdSize.SMART_BANNER;
         }
     }
 
