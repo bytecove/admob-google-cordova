@@ -400,8 +400,14 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
                 else if (adSize.getHeight() == 60) {
                   adView.setAdSize(AdSize.BANNER);
                 }
-                else if (adSize.getHeight() == 90 && metrics.widthPixels >= 768) {
-                  adView.setAdSize(new AdSize(768, 90));
+                else if (adSize.getHeight() == 90);
+                  DisplayMetrics metrics = DisplayInfo(AdMobAds.this.cordova.getActivity());
+                  if (metrics.widthPixels >= 768) {
+                    adView.setAdSize(new AdSize(768, 90));
+                  }
+                  else {
+                    adView.setAdSize(AdSize.BANNER);
+                  }
                 }
                 else {
                   adView.setAdSize(AdSize.BANNER);
