@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-admob" version="4.1.16">
   <description>Google AdMob Ads plugin for Cordova</description>
   <name>AdMob Google Ads</name>
-  <author email="info@bytecove.blogspot.com" href="https://github.com/bytecove/admob-google-cordova">bytecove</author>
+  <author email="info@bytecove.blogspot.com" href="https://github.com/bytecove/admob-google-cordova">Bytecove</author>
   <license>MIT</license>
   <keywords>ad,ads,admob,google,advertising,advertisment,publicity,earn,win,play,services,iad,flurry,monetization,money,bytecove,tappx</keywords>
   <repo>https://github.com/bytecove/admob-google-cordova.git</repo>
@@ -26,7 +26,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AdMobAds">
-        <param name="android-package" value="com.bytecove.cordova.admob.AdMobAds" />
+        <param name="android-package" value="com.blogspot.bytecove.cordova.admob.AdMobAds" />
       </feature>
     </config-file>
 

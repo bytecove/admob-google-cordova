@@ -1,8 +1,6 @@
 /*
  CDVAdMobAds.h
- Copyright 2015 AppFeel. All rights reserved.
- http://www.appfeel.com
- 
+
  AdMobAds Cordova Plugin (cordova-admob)
  
  Permission is hereby granted, free of charge, to any person obtaining a copy

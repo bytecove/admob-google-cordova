@@ -1,8 +1,6 @@
 /*
  AdMobAds.java
- Copyright 2015 AppFeel. All rights reserved.
- http://www.appfeel.com
- 
+
  AdMobAds Cordova Plugin (cordova-admob)
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,7 +22,7 @@
  SOFTWARE.
  */
 
-package com.appfeel.cordova.admob;
+package com.blogspot.bytecove.cordova.admob;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -54,8 +52,8 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.appfeel.cordova.connectivity.Connectivity;
-import com.appfeel.cordova.connectivity.Connectivity.IConnectivityChange;
+import com.blogspot.bytecove.cordova.connectivity.Connectivity;
+import com.blogspot.bytecove.cordova.connectivity.Connectivity.IConnectivityChange;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
@@ -417,8 +415,8 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
 
             } 
             else {
-                //adView.setAdSize(new AdSize(AdSize.FULL_WIDTH, adSize.getHeight()));
-                adView.setAdSize(adSize);
+                adView.setAdSize(new AdSize(AdSize.FULL_WIDTH, adSize.getHeight()));
+                //adView.setAdSize(adSize);
             }
             adView.setAdUnitId(_pid);
             adView.setAdListener(adListener);
