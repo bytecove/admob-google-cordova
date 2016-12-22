@@ -394,6 +394,20 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
         if (adView == null) {
             adView = new AdView(cordova.getActivity());
             if (isTappx) {
+                if (adSize.getHeight() == 50) {
+                  adView.setAdSize(AdSize.BANNER);
+                }
+                else if (adSize.getHeight() == 60) {
+                  adView.setAdSize(AdSize.BANNER);
+                }
+                else if (adSize.getHeight() == 90 && metrics.widthPixels >= 768) {
+                  adView.setAdSize(new AdSize(768, 90));
+                }
+                else {
+                  adView.setAdSize(AdSize.BANNER);
+                }
+
+                /*
                 if (adSize == AdSize.BANNER) { // 320x50
                     adView.setAdSize(adSize);
                 } else if (adSize == AdSize.MEDIUM_RECTANGLE) { // 300x250
@@ -412,6 +426,7 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
                         adView.setAdSize(AdSize.BANNER);
                     }
                 }
+                */
 
             } 
             else {
@@ -861,17 +876,31 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
      * @return An AdSize object used to create a banner.
      */
     public static AdSize adSizeFromString(String size) {
-        if ("BANNER".equals(size)) {
+        if ("H50".equals(size)) {
+          new AdSize(AdSize.FULL_WIDTH, 50);
+        } 
+        else if ("H60".equals(size)) {
+          new AdSize(AdSize.FULL_WIDTH, 60);
+        }
+        else if ("H32".equals(size)) {
+          new AdSize(AdSize.FULL_WIDTH, 32);
+        }
+        else if ("BANNER".equals(size)) {
             return AdSize.BANNER;
-        } else if ("IAB_MRECT".equals(size)) {
+        } 
+        else if ("IAB_MRECT".equals(size)) {
             return AdSize.MEDIUM_RECTANGLE;
-        } else if ("IAB_BANNER".equals(size)) {
+        } 
+        else if ("IAB_BANNER".equals(size)) {
             return AdSize.FULL_BANNER;
-        } else if ("IAB_LEADERBOARD".equals(size)) {
+        } 
+        else if ("IAB_LEADERBOARD".equals(size)) {
             return AdSize.LEADERBOARD;
-        } else if ("SMART_BANNER".equals(size)) {
+        } 
+        else if ("SMART_BANNER".equals(size)) {
             return AdSize.SMART_BANNER;
-        } else {
+        } 
+        else {
             return AdSize.SMART_BANNER;
         }
     }
