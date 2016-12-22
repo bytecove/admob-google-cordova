@@ -1,8 +1,6 @@
 /*
  admobAngular.js
- Copyright 2014 AppFeel. All rights reserved.
- http://www.appfeel.com
- 
+
  AdMobAds Cordova Plugin (cordova-admob)
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -75,12 +73,12 @@ if (typeof angular !== 'undefined') {
     // The returning object
     angularAdmob = {
       events: {
-        onAdLoaded: "appfeel.cordova.admob.onAdLoaded",
-        onAdFailedToLoad: "appfeel.cordova.admob.onAdFailedToLoad",
-        onAdOpened: "appfeel.cordova.admob.onAdOpened",
-        onAdLeftApplication: "appfeel.cordova.admob.onAdLeftApplication",
-        onAdClosed: "appfeel.cordova.admob.onAdClosed",
-        onInAppPurchaseRequested: "appfeel.cordova.admob.onInAppPurchaseRequested"
+        onAdLoaded: "bytecove.cordova.admob.onAdLoaded",
+        onAdFailedToLoad: "bytecove.cordova.admob.onAdFailedToLoad",
+        onAdOpened: "bytecove.cordova.admob.onAdOpened",
+        onAdLeftApplication: "bytecove.cordova.admob.onAdLeftApplication",
+        onAdClosed: "bytecove.cordova.admob.onAdClosed",
+        onInAppPurchaseRequested: "bytecove.cordova.admob.onInAppPurchaseRequested"
       },
       AD_SIZE: {
         BANNER: 'BANNER',

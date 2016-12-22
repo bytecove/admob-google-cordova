@@ -415,8 +415,10 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
                     }
                 }
 
-            } else {
-                adView.setAdSize(adSize);
+            } 
+            else {
+                adView.setAdSize(new AdSize(AdSize.FULL_WIDTH, adSize.getHeight()));
+                //adView.setAdSize(adSize);
             }
             adView.setAdUnitId(_pid);
             adView.setAdListener(adListener);

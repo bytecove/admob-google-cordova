@@ -2,9 +2,9 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-admob" version="4.1.16">
   <description>Google AdMob Ads plugin for Cordova</description>
   <name>AdMob Google Ads</name>
-  <author email="info@bytecove.blogspot.com" href="https://github.com/bytecove/admob-google-cordova">AppFeel</author>
+  <author email="info@bytecove.blogspot.com" href="https://github.com/bytecove/admob-google-cordova">bytecove</author>
   <license>MIT</license>
-  <keywords>ad,ads,admob,google,advertising,advertisment,publicity,earn,win,play,services,iad,flurry,monetization,money,appfeel,tappx</keywords>
+  <keywords>ad,ads,admob,google,advertising,advertisment,publicity,earn,win,play,services,iad,flurry,monetization,money,bytecove,tappx</keywords>
   <repo>https://github.com/bytecove/admob-google-cordova.git</repo>
   <issue>https://github.com/bytecove/admob-google-cordova/issues</issue>
 
@@ -26,7 +26,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AdMobAds">
-        <param name="android-package" value="com.appfeel.cordova.admob.AdMobAds" />
+        <param name="android-package" value="com.bytecove.cordova.admob.AdMobAds" />
       </feature>
     </config-file>
 
@@ -44,9 +44,9 @@
     </config-file-->
     <framework src="com.google.android.gms:play-services-ads:+" />
 
-    <source-file src="src/android/AdMobAds.java" target-dir="src/com/appfeel/cordova/admob" />
-    <source-file src="src/android/AdMobAdsAdListener.java" target-dir="src/com/appfeel/cordova/admob" />
-    <source-file src="src/android/AdMobAdsAppPurchaseListener.java" target-dir="src/com/appfeel/cordova/admob" />
+    <source-file src="src/android/AdMobAds.java" target-dir="src/com/bytecove/cordova/admob" />
+    <source-file src="src/android/AdMobAdsAdListener.java" target-dir="src/com/bytecove/cordova/admob" />
+    <source-file src="src/android/AdMobAdsAppPurchaseListener.java" target-dir="src/com/bytecove/cordova/admob" />
     <source-file src="src/android/res/xml/admob.xml" target-dir="res/xml" />
   </platform>
 

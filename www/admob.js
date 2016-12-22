@@ -1,7 +1,5 @@
 /*
  admob.js
- Copyright 2014 AppFeel. All rights reserved.
- http://www.appfeel.com
  
  AdMobAds Cordova Plugin (cordova-admob)
  
@@ -26,15 +24,15 @@
 var admob = window.admob || {};
 
 /**
- * This enum represents appfeel-cordova-admob plugin events
+ * This enum represents bytecove-cordova-admob plugin events
  */
 admob.events = {
-  onAdLoaded: "appfeel.cordova.admob.onAdLoaded",
-  onAdFailedToLoad: "appfeel.cordova.admob.onAdFailedToLoad",
-  onAdOpened: "appfeel.cordova.admob.onAdOpened",
-  onAdLeftApplication: "appfeel.cordova.admob.onAdLeftApplication",
-  onAdClosed: "appfeel.cordova.admob.onAdClosed",
-  onInAppPurchaseRequested: "appfeel.cordova.admob.onInAppPurchaseRequested",
+  onAdLoaded: "bytecove.cordova.admob.onAdLoaded",
+  onAdFailedToLoad: "bytecove.cordova.admob.onAdFailedToLoad",
+  onAdOpened: "bytecove.cordova.admob.onAdOpened",
+  onAdLeftApplication: "bytecove.cordova.admob.onAdLeftApplication",
+  onAdClosed: "bytecove.cordova.admob.onAdClosed",
+  onInAppPurchaseRequested: "bytecove.cordova.admob.onInAppPurchaseRequested",
 };
 
 /**
@@ -77,7 +75,7 @@ admob.options = {
 };
 
 /**
- * Initialize appfeel-cordova-admob plugin with options:
+ * Initialize bytecove-cordova-admob plugin with options:
  * @param {!Object}    options         AdMob options (use admob.options as template)
  * @param {function()} successCallback Callback on success
  * @param {function()} failureCallback Callback on fail
