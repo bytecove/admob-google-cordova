@@ -52,8 +52,8 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.blogspot.bytecove.cordova.connectivity.Connectivity;
-import com.blogspot.bytecove.cordova.connectivity.Connectivity.IConnectivityChange;
+import com.appfeel.cordova.connectivity.Connectivity;
+import com.appfeel.cordova.connectivity.Connectivity.IConnectivityChange;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
