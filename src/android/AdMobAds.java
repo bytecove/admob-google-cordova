@@ -888,6 +888,9 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
         else if ("H60".equals(size)) {
           return new AdSize(AdSize.FULL_WIDTH, 60);
         }
+        else if ("H90".equals(size)) {
+          return new AdSize(AdSize.FULL_WIDTH, 90);
+        }
         else if ("H32".equals(size)) {
           return new AdSize(AdSize.FULL_WIDTH, 32);
         }
