@@ -713,9 +713,6 @@ public class AdMob extends CordovaPlugin {
         else {
           return AdSize.SMART_BANNER;
         }
-        else {
-            return null;
-        }
     }
 
     /** Gets a string error reason from an error code. */
