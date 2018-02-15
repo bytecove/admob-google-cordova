@@ -713,19 +713,7 @@ public class AdMob extends CordovaPlugin {
         else {
           return AdSize.SMART_BANNER;
         }
-        else if ("BANNER".equals(size)) {
-            return AdSize.BANNER;
-        } else if ("IAB_MRECT".equals(size)) {
-            return AdSize.MEDIUM_RECTANGLE;
-        } else if ("IAB_BANNER".equals(size)) {
-            return AdSize.FULL_BANNER;
-        } else if ("IAB_LEADERBOARD".equals(size)) {
-            return AdSize.LEADERBOARD;
-        } else if ("LARGE_BANNER".equals(size)) {
-            return AdSize.LARGE_BANNER;
-        } else if ("SMART_BANNER".equals(size)) {
-            return AdSize.SMART_BANNER;
-        } else {
+        else {
             return null;
         }
     }
